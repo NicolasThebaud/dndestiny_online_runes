@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    padding: 5vh 5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+}
+
+#bg {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1920px;
+    height: 1080px;
+}
+
+.center {
+    transform-origin: center;
+    transform: translate(-50%);
+    left: 960px;
+}
+
+#rune-main {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 440px;
+    border: 4px solid #CCA408CC;
+    background-color: #666666EE;
+}
+#rune-main>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#trash {
+    transform: translate(-100%, -50%);
+    font-size: 30px;
+    position: absolute;
+    top: 540px;
+    left: 800px;
+    border-color: #00DAFF;
+    border: 2px solid #CCA408CC;
+    background-color: #666666EE;
+    width: 32px;
+    height: 32px;
+}
+
+#top-tokens {position: absolute;top: 150px;}
+#mid-tokens {position: absolute;top: 340px;}
+#bottom-tokens {position: absolute;top: 725px;}
+#extra-tokens {
+    transform: translate(0, -50%);
+    position: absolute;
+    top: 540px;
+    left: 1100px;
+    border-color: #00DAFF;
+}
+#corner1-tokens {
+    transform: translate(-100%);
+    position: absolute;
+    top: 340px;
+    left: 800px;
+}
+#corner2-tokens {
+    transform: translate(0%);
+    position: absolute;
+    top: 340px;
+    left: 1100px;
+}
+#corner3-tokens {
+    transform: translate(-100%);
+    position: absolute;
+    top: 625px;
+    left: 800px;
+}
+#corner4-tokens {
+    transform: translate(0%);
+    position: absolute;
+    top: 625px;
+    left: 1100px;
+}
+.token {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    border: 2px solid;
+    background-color: #ACACAC66;
+    border-color: #8AFF91;
+}
+.token>img {
+    width: 64px;
+    height: 64px;
+    position: relative;
+}
+#top-tokens>.token { border-color: #FF8900; }
+#mid-tokens>.token { border-color: #FFDF00; }
+#extra-tokens>.token { border-color: #00DAFF; }
+#bottom-tokens>.token { border-color: #E770FF; }
